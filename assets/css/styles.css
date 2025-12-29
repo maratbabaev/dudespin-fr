@@ -427,6 +427,9 @@ header {
   color: rgb(255, 249, 221);
   text-shadow: 0.7px 1px 0.5px rgb(255, 119, 0), 1.2px 2px 0.5px rgb(102, 51, 7), 1.5px 2.5px 0 rgba(255, 178, 102, 0.95), 0 0 5px rgb(255, 103, 1), 0 0 10px rgb(255, 55, 0), 0 0 20px rgba(255, 55, 0, 0.5);
 }
+.banner__content p:nth-child(2) br:nth-child(5) {
+  display: none;
+}
 
 .button {
   margin-top: 32px;
@@ -864,6 +867,12 @@ footer {
 }
 
 @media (max-width: 1919px) {
+  .banner__content p:nth-child(2) br:nth-child(5) {
+    display: block;
+  }
+  .banner__content p:nth-child(2) br:nth-child(3) {
+    display: none;
+  }
   .banner {
     height: 400px;
   }
@@ -908,6 +917,12 @@ footer {
   }
 }
 @media (max-width: 767px) {
+  .banner__content p:nth-child(2) br:nth-child(5) {
+    display: none;
+  }
+  .banner__content p:nth-child(2) br:nth-child(3) {
+    display: block;
+  }
   header {
     height: 109px;
     flex-direction: column;
